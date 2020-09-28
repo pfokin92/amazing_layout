@@ -34,7 +34,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-image: url("../image/HERO_IMAGE.png");
-    height: 100vh;
+    height: 900px;
     background-color: rgba(31, 225, 237, 0.82);
     position: relative;
 }
@@ -47,8 +47,8 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0.3;
-    position: absolute; 
-    clip-path: polygon(100% 0, 0 100%, 100% 100%);          
+    position: absolute;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 
 .header_wrapper {
@@ -119,4 +119,59 @@ body {
 
 .name {
     font-family: firasansbold;
+}
+
+/*==========MAIN==========*/
+
+
+.images_and_biography {
+    display: flex;
+    margin: 0;
+}
+
+.image_bio {
+    width: 50%;
+    height: 500px;
+}
+
+.glass_image {
+    width: 100%;
+}
+
+.biography_contanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 56px;
+    padding-right: 255px;
+    color: #666666;
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.biography_header {
+    text-transform: uppercase;
+    font-family: firasansbold;
+    font-size: 24px;
+    margin: 0;
+}
+
+.biography_text {
+    font-family: firalight;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: -0.9px;
+}
+
+.images_contanier {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.instagram {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.text_contanier {
+    width: 50%;
 }

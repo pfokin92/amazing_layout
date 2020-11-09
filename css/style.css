@@ -27,8 +27,73 @@
 }
 
 body {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "imbio imbio biocontanier biocontanier"
+    "image1 image2 image3 image4"
+    "instagram instagram contact_instagram missing_instagram"
+    "image_self_efarsing image_self_efarsing image_self_efarsing image_self_efarsing"
+    "footer footer footer footer";
+    grid-template-rows: 900px 500px 515px 515px 900px 500px;
+    grid-template-columns: 400px 400px 400px 400px;
     margin: 0;
 }
+
+#header_page{
+    grid-area: header;
+}
+
+#image_bio {
+    grid-area: imbio;
+
+}
+
+#biography_contanier {
+    grid-area: biocontanier;
+}
+
+#image1{
+    grid-area: image1;
+}
+
+#image2{
+    grid-area: image2;
+}
+
+#image3{
+    grid-area: image3;
+}
+
+#image4{
+    grid-area: image4;
+}
+
+#instagram {
+    grid-area: instagram;
+}
+
+#contact_instagram {
+    grid-area: contact_instagram;
+}
+
+#missing_instagram {
+    grid-area: missing_instagram;
+    background-color: #3f729b;;
+}
+#image_self_efarsing {
+    grid-area: image_self_efarsing;
+    position: relative;
+}
+
+#missing_page {
+    background-color: #282b2f;
+    position: absolute;
+    grid-row: 900px;
+    grid-column: 400px;
+}
+
+
 
 .header_page {
     background-size: cover;
@@ -130,7 +195,6 @@ body {
 }
 
 .image_bio {
-    width: 50%;
     height: 500px;
 }
 
@@ -145,7 +209,6 @@ body {
     padding-left: 56px;
     padding-right: 255px;
     color: #666666;
-    width: 50%;
     height: 500px;
     box-sizing: border-box;
 }
@@ -163,15 +226,51 @@ body {
     margin: 0;
     letter-spacing: -0.9px;
 }
-
-.images_contanier {
-    display: flex;
-    flex-wrap: nowrap;
+.image_mountain {
+    width: 100%;
+    height: 100%;
 }
 .instagram {
     display: flex;
     flex-wrap: nowrap;
+    background-color: #3f729b;
+    align-items: center;
 }
 .text_contanier {
-    width: 50%;
+    margin-left: 212px;
+    margin-right: 94px;
+    color: #f9f9f9;
+}
+.title_social {
+    margin: 0;
+    font-size: 24px;
+    font-family: firasansbold;
+}
+
+.text_instagram {
+    font-family: firalight;
+    font-size: 36px;
+    letter-spacing: -0.9px;
+}
+
+.link_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 28px;
+    width: 280px;
+    padding: 15px 29px 13px 27px;
+}
+
+.link_instagram {
+    font-family: firasansbold;
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+}
+.image_self_efarcing {
+    opacity: 0.7;
 }
